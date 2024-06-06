@@ -53,6 +53,16 @@ vim.keymap.set('n', 'leader>-', '<Plug>AirlineSelectPrevTab')
 vim.keymap.set('n', 'leader>+', '<Plug>AirlineSelectNextTab')
 -- 设置切换tab的快捷键 <\> + <q> 退出当前的 tab
 vim.keymap.set('n', 'leader>q', ':bp<cr>:bd #<cr>')
+
+-- let g:coc_enable_locationlist = 0
+-- autocmd User CocLocationsChange CocList --no-quit --normal location
+
+-- nnoremap <A-l> :bnext<cr>
+vim.keymap.set('n', '<A-l>', ':bnext<cr>')
+-- nnoremap <A-h> :bprevious<cr>
+vim.keymap.set('n', '<A-h>', ':bprevious<cr>')
+
+
 -- 修改了一些个人不喜欢的字符
 -- if vim.g.airline_symbols == nil then
     -- vim.g.airline_symbols = {}
