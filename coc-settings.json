@@ -1,0 +1,128 @@
+{
+	// suggestions
+	"suggest.noselect": false,
+	"suggest.echodocSupport": true,
+	"suggest.preferCompleteThanJumpPlaceholder": true,
+	// TODO add more labels and give them cool glyphs
+	"suggest.completionItemKindLabels": {
+		"text": "t",
+		"method": "m",
+		"function": ""
+	},
+	"snippets.priority": 1,
+	//"yank.priority": 1,
+	"suggest.languageSourcePriority": 99,
+	"coc.source.file.priority": 2,
+	"coc.source.around.priority": 3,
+	"coc.source.buffer.priority": 4,
+	// diagnostics
+	"diagnostic.errorSign": "✖",
+	"diagnostic.warningSign": "⚠",
+	"diagnostic.infoSign": "ℹ",
+	"diagnostic.hintSign": "➤",
+	// "diagnostic.displayByAle": true,
+	// "diagnostic.virtualText": true, // this won't work with codelens when error on same line
+	// codelens
+	"codeLens.enable": true,
+	"signature.enable": true,
+	// list
+	"list.indicator": ">",
+	"list.selectedSignText": " ",
+	// autoformat
+	"coc.preferences.formatOnSaveFiletypes": [
+		"go",
+		"css",
+		"markdown",
+		"javascript",
+		"html",
+		"yaml",
+		"json",
+		"python"
+	],
+	"coc.preferences.hoverTarget": "float",
+	// python config
+	"python.analysis.autoImportCompletions": true,
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.diagnosticMode": "openFilesOnly",
+	"python.analysis.stubPath": "typings",
+	"python.analysis.typeshedPaths": [],
+	"python.analysis.diagnosticSeverityOverrides": {},
+	"python.analysis.typeCheckingMode": "basic",
+	"python.analysis.useLibraryCodeForTypes": true,
+	"python.pythonPath": "/home/clyde/anaconda3/envs/ai39/bin/python",
+	"python.venvPath": "",
+	"python.formatting.provider": "black",
+	"python.formatting.blackPath": "black",
+	"python.formatting.blackArgs": [],
+	"python.formatting.autopep8Path": "autopep8",
+	"python.formatting.autopep8Args": [],
+	"python.formatting.yapfPath": "yapf",
+	"python.formatting.yapfArgs": [],
+	"python.linting.enabled": true,
+	"python.linting.flake8Enabled": false,
+	"python.linting.banditEnabled": false,
+	"python.linting.mypyEnabled": false,
+	"python.linting.pytypeEnabled": false,
+	"python.linting.prospectorEnabled": false,
+	"python.linting.pydocstyleEnabled": false,
+	"python.linting.pylamaEnabled": false,
+	// "python.linting.pylintEnabled": false,
+	"pyright.disableCompletion": false,
+	"pyright.disableLanguageServices": false,
+	"pyright.disableOrganizeImports": false,
+	// "python.venvFolders": ["envs",".pyenv",".direnv", "~/.local/share/virtualenvs", "~/.cache/pypoetry/virtualenvs"],
+	"python.workspaceSymbols.exclusionPatterns": [],
+	"python.jediEnabled": false,
+	"python.linting.pylintEnabled": true,
+	// "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+	// "python.formatting.blackPath":"~/.local/bin/black",
+	// "python.linting.mypyEnabled": true,
+	// "python.linting.mypyPath": "~/.local/bin/mypy",
+	// "python.formatting.provider": "black",
+	"python.sortImports.path": "/home/calev/.local/bin/isort",
+	"languageserver": {
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": [
+				"go.mod",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"go"
+			],
+			"initializationOptions": {
+				"usePlaceholders": true
+			}
+		}
+	},
+	"go.delveConfig": {
+		"dlvLoadConfig": {
+			"maxStringLen": 1024,
+			"maxArrayValues": 1024
+		}
+	},
+	// explorer
+	"explorer.width": 40,
+	"explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
+	"explorer.icon.enableNerdfont": true,
+	"explorer.previewAction.onHover": false,
+	"explorer.icon.enableVimDevicons": false,
+	"explorer.file.showHiddenFiles": false,
+	"explorer.keyMappings.global": {
+		"<cr>": [
+			"expandable?",
+			"expand",
+			"open"
+		],
+		"v": "open:vsplit"
+	},
+	"bookmark.sign": "",
+	//coc-emoji
+	"coc.source.emoji.filetypes": [
+		"markdown"
+	],
+	"coc.preferences.willSaveHandlerTimeout": 20000
+}
