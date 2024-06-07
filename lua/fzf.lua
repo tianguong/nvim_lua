@@ -4,7 +4,7 @@ vim.cmd [[
 let g:fzf_preview_window = ''
 
 " -- Always enable preview window on the right with 60% width
-let g:fzf_preview_window = 'right:60%'
+let g:fzf_preview_window = 'right:80%'
 
 " -- ---------------vim-multiple-cursors-----------------------
 let g:multi_cursor_use_default_mapping=0
@@ -19,3 +19,5 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 ]]
+
+vim.keymap.set("n", "<c-P>", "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })

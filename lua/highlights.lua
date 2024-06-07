@@ -8,9 +8,9 @@ vim.opt.termguicolors = true
 vim.opt.wildoptions = 'pum'
 
 -- 弹出菜单的透明度，5是稍微透明，最大值100（全透明）
-vim.opt.pumblend = 5
+-- vim.opt.pumblend = 5
 
 -- 背景颜色方案设置为"dark"，插件、颜色和语法高亮将针对暗背景进行优化。
-vim.opt.background = 'dark'
+-- vim.opt.background = 'dark'
 -- 语法高亮
 vim.opt.syntax = on 
