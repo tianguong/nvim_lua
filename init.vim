@@ -50,11 +50,11 @@ call plug#end()
 " silent! colorscheme seoul256
 
 " -------------- molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
-
 set background=dark
 silent! colorscheme molokai
+
+let g:molokai_original = 1
+let g:rehash256 = 1
 
 " ---------------针对NERDTree-------------
 " https://github.com/scrooloose/nerdtree/issues/953#issuecomment-465148857
