@@ -28,7 +28,7 @@ set cursorline
 set inccommand=nosplit
 
 call plug#begin()
-Plug 'projekt0n/github-nvim-theme'
+" Plug 'projekt0n/github-nvim-theme'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
@@ -44,9 +44,17 @@ Plug 'preservim/tagbar'
 Plug 'tomasr/molokai'
 
 call plug#end()
+
+" Color schemes should be loaded after plug#end().
+" We prepend it with 'silent!' to ignore errors when it's not yet installed.
+" silent! colorscheme seoul256
+
 " -------------- molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
+
+set background=dark
+silent! colorscheme molokai
 
 " ---------------针对NERDTree-------------
 " https://github.com/scrooloose/nerdtree/issues/953#issuecomment-465148857
