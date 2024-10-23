@@ -20,7 +20,7 @@
 	"diagnostic.warningSign": "⚠",
 	"diagnostic.infoSign": "ℹ",
 	"diagnostic.hintSign": "➤",
-	// "diagnostic.displayByAle": true,
+	"diagnostic.displayByAle": true,
 	// "diagnostic.virtualText": true, // this won't work with codelens when error on same line
 	// codelens
 	"codeLens.enable": true,
@@ -79,7 +79,7 @@
 	// "python.linting.mypyEnabled": true,
 	// "python.linting.mypyPath": "~/.local/bin/mypy",
 	// "python.formatting.provider": "black",
-	"python.sortImports.path": "/home/calev/.local/bin/isort",
+	"python.sortImports.path": "/home/clyde/.local/bin/isort",
 	"languageserver": {
 		"golang": {
 			"command": "gopls",

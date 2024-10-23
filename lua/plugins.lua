@@ -12,16 +12,12 @@ Plug('fatih/vim-go', { ['tag'] = '*' })
 -- Using a non-default branch
 Plug('neoclide/coc.nvim', { ['branch'] = 'release' })
 -- Use 'dir' option to install plugin in a non-default directory
-Plug('junegunn/fzf', { ['dir'] = '~/.fzf' })
--- Post-update hook: run a shell command after installing or updating the plugin
-Plug('junegunn/fzf', { ['dir'] = '~/.fzf', ['do'] = './install --all' })
--- Post-update hook can be a lambda expression
-Plug('junegunn/fzf', { ['do'] = function()
-vim.fn['fzf#install']()
-end })
--- Plug('ibhagwan/fzf-lua', { ['branch'] = 'main'})
+-- Plug('junegunn/fzf'), { "do": { -> fzf#install() } }
+Plug('ibhagwan/fzf-lua', { ['branch'] = 'main'})
 -- optional for icon support
 Plug('nvim-tree/nvim-web-devicons')
+-- or if using mini.icons/mini.nvim
+-- Plug 'echasnovski/mini.icons'
 Plug('junegunn/gv.vim')
 -- If the vim plugin is in a subdirectory, use 'rtp' option to specify its path
 Plug('nsf/gocode', { ['rtp'] = 'vim' })
@@ -39,11 +35,15 @@ Plug('vim-airline/vim-airline')
 -- airline 的主题
 Plug('vim-airline/vim-airline-themes')
 Plug('preservim/tagbar')
-Plug 'projekt0n/github-nvim-theme'
--- Plug 'tomasr/molokai'
+-- Plug 'projekt0n/github-nvim-theme'
+Plug 'tomasr/molokai'
+Plug 'dense-analysis/ale'                                                                                                                                                                   
+
 
 vim.call('plug#end')
 
 -- Color schemes should be loaded after plug#end().
 -- We prepend it with 'silent!' to ignore errors when it's not yet installed.
 -- vim.cmd('silent! colorscheme seoul256')
+--
+
