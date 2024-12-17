@@ -39,7 +39,7 @@ Plug 'buoto/gotests-vim'
 Plug 'sebdah/vim-delve'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes' "airline 的主题
+Plug 'vim-airline/vim-airline-themes' " airline 的主题
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'tomasr/molokai'

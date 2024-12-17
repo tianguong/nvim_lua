@@ -13,9 +13,9 @@ Plug('fatih/vim-go', { ['tag'] = '*' })
 Plug('neoclide/coc.nvim', { ['branch'] = 'release' })
 -- Use 'dir' option to install plugin in a non-default directory
 -- Plug('junegunn/fzf'), { "do": { -> fzf#install() } }
-Plug('ibhagwan/fzf-lua', { ['branch'] = 'main'})
+-- Plug('ibhagwan/fzf-lua', { ['branch'] = 'main'})
 -- optional for icon support
-Plug('nvim-tree/nvim-web-devicons')
+-- Plug('nvim-tree/nvim-web-devicons')
 -- or if using mini.icons/mini.nvim
 -- Plug 'echasnovski/mini.icons'
 Plug('junegunn/gv.vim')
@@ -36,8 +36,8 @@ Plug('vim-airline/vim-airline')
 Plug('vim-airline/vim-airline-themes')
 Plug('preservim/tagbar')
 -- Plug 'projekt0n/github-nvim-theme'
-Plug 'tomasr/molokai'
-Plug 'dense-analysis/ale'                                                                                                                                                                   
+-- Plug 'tomasr/molokai'
+-- Plug 'dense-analysis/ale'                                                                                                                                                                   
 
 
 vim.call('plug#end')
