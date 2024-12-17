@@ -91,9 +91,6 @@ vim.opt.formatoptions:append { 'r' }
 vim.opt.splitright = true
 
 vim.cmd [[
-" --------------------------------- python
-let g:python3_host_prog = '/usr/bin/python3'
-
-" --------------------------------- go
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+    let g:python3_host_prog = '/usr/bin/python3'
+    autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 ]]
